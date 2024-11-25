@@ -80,7 +80,7 @@
                         <span class="video-mme" style="vertical-align: middle">MotionBench</span>
                     </h1>
                     <h2 class="subtitle is-3 publication-subtitle" , style="margin-bottom: 20px;">
-                        An Extreme Long Video Understanding Benchmark
+                        Benchmarking and Improving Fine-grained Video Motion Understanding for Vision Language Models
                     </h2>
 
                     <div class="is-size-5 publication-authors" , style="width: 80%; margin: 20px auto;" ,>
@@ -201,13 +201,14 @@
                             <th rowspan="2" class="no-sort" style="vertical-align: middle;"><strong>Frames</strong></th>
                             <th rowspan="2" style="vertical-align: middle;"><strong>LLM <br>Params</strong></th>
                             <th rowspan="2" style="vertical-align: middle;"><strong>Date</strong></th>
-                            <th rowspan="2" style="vertical-align: middle;"><strong>Overall (%)</strong></th>
-                            <th rowspan="2" style="vertical-align: middle;"><strong>ER (%)</strong></th>
-                            <th rowspan="2" style="vertical-align: middle;"><strong>EU (%)</strong></th>
-                            <th rowspan="2" style="vertical-align: middle;"><strong>KIR (%)</strong></th>
-                            <th rowspan="2" style="vertical-align: middle;"><strong>TG (%)</strong></th>
-                            <th rowspan="2" style="vertical-align: middle;"><strong>Rea (%)</strong></th>
-                            <th rowspan="2" style="vertical-align: middle;"><strong>Sum (%)</strong></th>
+                            <th rowspan="2" style="vertical-align: middle;"><strong>Dev Avg (%)</strong></th>
+                            <th rowspan="2" style="vertical-align: middle;"><strong>Test Avg (%)</strong></th>
+                            <th rowspan="2" style="vertical-align: middle;"><strong>MR (%)</strong></th>
+                            <th rowspan="2" style="vertical-align: middle;"><strong>LM (%)</strong></th>
+                            <th rowspan="2" style="vertical-align: middle;"><strong>CM (%)</strong></th>
+                            <th rowspan="2" style="vertical-align: middle;"><strong>MO (%)</strong></th>
+                            <th rowspan="2" style="vertical-align: middle;"><strong>AO (%)</strong></th>
+                            <th rowspan="2" style="vertical-align: middle;"><strong>RC (%)</strong></th>
                         </tr>
 
                         </thead>
@@ -216,42 +217,45 @@
                         <tr>
                             <td style="vertical-align: middle;"></td>
                             <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct"
-                                    class="ext-link" style="font-size: 16px;">Qwen2-VL-72B
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Alibaba</p>
+                                    href="https://github.com/THUDM/MotionBench"
+                                    class="ext-link" style="font-size: 16px;">TE Fusion
+                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Zhipu AI & Tsinghua</p>
                             </a></b></td>
-                            <td style="vertical-align: middle;">48</td>
-                            <td style="vertical-align: middle;">72B</td>
-                            <td style="vertical-align: middle;"><strong style="color: #22a56e;">2024-09-20</strong></td>
+                            <td style="vertical-align: middle;">16</td>
+                            <td style="vertical-align: middle;">9B</td>
+                            <td style="vertical-align: middle;">2024-11-25</td>
 
-                            <td style="vertical-align: middle;"><b class="">41.3</b></td>
-                            <td style="vertical-align: middle;">38.0</td>
-                            <td style="vertical-align: middle;">41.1</td>
-                            <td style="vertical-align: middle;">38.3</td>
-                            <td style="vertical-align: middle;">41.4</td>
-                            <td style="vertical-align: middle;">46.5</td>
-                            <td style="vertical-align: middle;">46.6</td>
+                            <td style="vertical-align: middle;"><b class="">58</b></td>
+                            <td style="vertical-align: middle;"><b class="">58</b></td>
+                            <td style="vertical-align: middle;">64</td>
+                            <td style="vertical-align: middle;">59</td>
+                            <td style="vertical-align: middle;">51</td>
+                            <td style="vertical-align: middle;">69</td>
+                            <td style="vertical-align: middle;">41</td>
+                            <td style="vertical-align: middle;">39</td>
                         </tr>
 
                         <tr>
                             <td style="vertical-align: middle;"></td>
                             <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://github.com/TimeMarker-LLM/TimeMarker"
-                                    class="ext-link" style="font-size: 16px;">TimeMarker
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Meituan</p>
+                                    href="https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct"
+                                    class="ext-link" style="font-size: 16px;">Qwen2-VL-72B
+                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Alibaba</p>
                             </a></b></td>
-                            <td style="vertical-align: middle;">&le;128</td>
-                            <td style="vertical-align: middle;">8B</td>
-                            <td style="vertical-align: middle;"><strong style="color: #22a56e;">2024-10-29</strong></td>
+                            <td style="vertical-align: middle;">1fps</td>
+                            <td style="vertical-align: middle;">72B</td>
+                            <td style="vertical-align: middle;">2024-11-25</td>
 
-                            <td style="vertical-align: middle;"><b class="">41.3</b></td>
-                            <td style="vertical-align: middle;">42.8</td>
-                            <td style="vertical-align: middle;">39.1</td>
-                            <td style="vertical-align: middle;">34.9</td>
-                            <td style="vertical-align: middle;">38.7</td>
-                            <td style="vertical-align: middle;">38.2</td>
-                            <td style="vertical-align: middle;">48.8</td>
+                            <td style="vertical-align: middle;"><b class="">57</b></td>
+                            <td style="vertical-align: middle;"><b class="">58</b></td>
+                            <td style="vertical-align: middle;">58</td>
+                            <td style="vertical-align: middle;">61</td>
+                            <td style="vertical-align: middle;">63</td>
+                            <td style="vertical-align: middle;">72</td>
+                            <td style="vertical-align: middle;">47</td>
+                            <td style="vertical-align: middle;">31</td>
                         </tr>
+
 
                         <tr>
                             <td style="vertical-align: middle;"></td>
@@ -262,15 +266,16 @@
                             </a></b></td>
                             <td style="vertical-align: middle;">16</td>
                             <td style="vertical-align: middle;">34B</td>
-                            <td style="vertical-align: middle;"><strong style="color: #22a56e;">2024-08-30</strong></td>
+                            <td style="vertical-align: middle;">2024-11-25</td>
 
-                            <td style="vertical-align: middle;"><b class="">39.6</b></td>
-                            <td style="vertical-align: middle;">37.4</td>
-                            <td style="vertical-align: middle;">39.7</td>
-                            <td style="vertical-align: middle;">43.4</td>
-                            <td style="vertical-align: middle;">31.4</td>
-                            <td style="vertical-align: middle;">42.5</td>
-                            <td style="vertical-align: middle;">41.4</td>
+                            <td style="vertical-align: middle;"><b class="">55</b></td>
+                            <td style="vertical-align: middle;"><b class="">54</b></td>
+                            <td style="vertical-align: middle;">54</td>
+                            <td style="vertical-align: middle;">58</td>
+                            <td style="vertical-align: middle;">49</td>
+                            <td style="vertical-align: middle;">76</td>
+                            <td style="vertical-align: middle;">41</td>
+                            <td style="vertical-align: middle;">30</td>
                         </tr>
 
                         <tr>
@@ -282,15 +287,62 @@
                             </a></b></td>
                             <td style="vertical-align: middle;">30</td>
                             <td style="vertical-align: middle;">-</td>
-                            <td style="vertical-align: middle;"><strong style="color: #22a56e;">2024-08-30</strong></td>
+                            <td style="vertical-align: middle;">2024-11-25</td>
 
-                            <td style="vertical-align: middle;"><b class="">38.3</b></td>
-                            <td style="vertical-align: middle;">39.9</td>
-                            <td style="vertical-align: middle;">35.8</td>
-                            <td style="vertical-align: middle;">34.8</td>
-                            <td style="vertical-align: middle;">37.7</td>
+                            <td style="vertical-align: middle;"><b class="">54</b></td>
+                            <td style="vertical-align: middle;"><b class="">55</b></td>
+                            <td style="vertical-align: middle;">57</td>
+                            <td style="vertical-align: middle;">57</td>
+                            <td style="vertical-align: middle;">54</td>
+                            <td style="vertical-align: middle;">69</td>
                             <td style="vertical-align: middle;">40</td>
-                            <td style="vertical-align: middle;">32.8</td>
+                            <td style="vertical-align: middle;">37</td>
+                        </tr>
+
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a href="https://arxiv.org/abs/2408.01800"
+                                                                               class="ext-link"
+                                                                               style="font-size: 16px;">MiniCPM-V2.6
+                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Tsinghua</p>
+                            </a></b></td>
+                            <td style="vertical-align: middle;">64</td>
+                            <td style="vertical-align: middle;">7B</td>
+                            <td style="vertical-align: middle;">2024-11-25</td>
+
+
+                            <td style="vertical-align: middle;"><b class="">52</b></td>
+                            <td style="vertical-align: middle;"><b class="">53</b></td>
+                            <td style="vertical-align: middle;">56</td>
+                            <td style="vertical-align: middle;">49</td>
+                            <td style="vertical-align: middle;">45</td>
+                            <td style="vertical-align: middle;">72</td>
+                            <td style="vertical-align: middle;">39</td>
+                            <td style="vertical-align: middle;">33</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td style="vertical-align: middle;"></td>
+                            <td style="vertical-align: middle;"><b class=""><a
+                                    href="https://github.com/magic-research/PLLaVA" class="ext-link"
+                                    style="font-size: 16px;">PLLaVA 34B
+                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Bytedance & NTU</p>
+                            </a></b></td>
+                            <td style="vertical-align: middle;">16</td>
+                            <td style="vertical-align: middle;">34B</td>
+                            <td style="vertical-align: middle;">2024-11-25</td>
+
+
+                            <td style="vertical-align: middle;"><b class="">52</b></td>
+                            <td style="vertical-align: middle;"><b class="">51</b></td>
+                            <td style="vertical-align: middle;">55</td>
+                            <td style="vertical-align: middle;">51</td>
+                            <td style="vertical-align: middle;">47</td>
+                            <td style="vertical-align: middle;">66</td>
+                            <td style="vertical-align: middle;">38</td>
+                            <td style="vertical-align: middle;">31</td>
                         </tr>
 
                         <tr>
@@ -300,39 +352,18 @@
                                     class="ext-link" style="font-size: 16px;">Gemini 1.5 Pro
                                 <p style="font-size: 12px; margin-left: 5px; color: #858383;">Google</p>
                             </a></b></td>
-                            <td style="vertical-align: middle;">3600</td>
+                            <td style="vertical-align: middle;">1fps</td>
                             <td style="vertical-align: middle;">-</td>
-                            <td style="vertical-align: middle;">2024-06-11</td>
+                            <td style="vertical-align: middle;">2024-11-25</td>
 
-                            <td style="vertical-align: middle;"><b class="">33.1</b></td>
-                            <td style="vertical-align: middle;">32.1</td>
-                            <td style="vertical-align: middle;">30.9</td>
-                            <td style="vertical-align: middle;">39.3</td>
-                            <td style="vertical-align: middle;">31.8</td>
-                            <td style="vertical-align: middle;">27</td>
-                            <td style="vertical-align: middle;">32.8</td>
-                        </tr>
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://llava-vl.github.io/blog/2024-04-30-llava-next-video/"
-                                    class="ext-link"
-                                    style="font-size: 16px;">LLaVA-NeXT-Video-DPO (34B)
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Bytedance & NTU S-Lab</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">32</td>
-                            <td style="vertical-align: middle;">34B</td>
-                            <td style="vertical-align: middle;">2024-06-11</td>
-
-
-                            <td style="vertical-align: middle;"><b class="">32.2</b></td>
-                            <td style="vertical-align: middle;">30.1</td>
-                            <td style="vertical-align: middle;">31.2</td>
-                            <td style="vertical-align: middle;">34.1</td>
-                            <td style="vertical-align: middle;">31.4</td>
-                            <td style="vertical-align: middle;">35</td>
-                            <td style="vertical-align: middle;">27.6</td>
+                            <td style="vertical-align: middle;"><b class="">51</b></td>
+                            <td style="vertical-align: middle;"><b class="">50</b></td>
+                            <td style="vertical-align: middle;">51</td>
+                            <td style="vertical-align: middle;">52</td>
+                            <td style="vertical-align: middle;">54</td>
+                            <td style="vertical-align: middle;">67</td>
+                            <td style="vertical-align: middle;">40</td>
+                            <td style="vertical-align: middle;">22</td>
                         </tr>
 
                         <tr>
@@ -346,37 +377,44 @@
                             </a></b></td>
                             <td style="vertical-align: middle;">64</td>
                             <td style="vertical-align: middle;">34B</td>
-                            <td style="vertical-align: middle;"><strong style="color: #22a56e;">2024-09-30</strong></td>
+                            <td style="vertical-align: middle;">2024-11-25</td>
 
 
-                            <td style="vertical-align: middle;"><b class="">30.4</b></td>
-                            <td style="vertical-align: middle;">27.4</td>
-                            <td style="vertical-align: middle;">29.2</td>
-                            <td style="vertical-align: middle;">32.1</td>
-                            <td style="vertical-align: middle;">29.1</td>
-                            <td style="vertical-align: middle;">34</td>
-                            <td style="vertical-align: middle;">39.7</td>
+                            <td style="vertical-align: middle;"><b class="">49</b></td>
+                            <td style="vertical-align: middle;"><b class="">49</b></td>
+                            <td style="vertical-align: middle;">48</td>
+                            <td style="vertical-align: middle;">52</td>
+                            <td style="vertical-align: middle;">44</td>
+                            <td style="vertical-align: middle;">65</td>
+                            <td style="vertical-align: middle;">42</td>
+                            <td style="vertical-align: middle;">32</td>
                         </tr>
 
                         <tr>
                             <td style="vertical-align: middle;"></td>
                             <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://openai.com/index/hello-gpt-4o/"
-                                    class="ext-link" style="font-size: 16px;">GPT-4o(2024-05-13)<sup>*</sup>
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">OpenAI</p>
+                                    href="https://llava-vl.github.io/blog/2024-04-30-llava-next-video/"
+                                    class="ext-link"
+                                    style="font-size: 16px;">LLaVA-NeXT-Video-DPO (34B)
+                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Bytedance & NTU S-Lab</p>
                             </a></b></td>
-                            <td style="vertical-align: middle;">348</td>
-                            <td style="vertical-align: middle;">-</td>
-                            <td style="vertical-align: middle;"><strong style="color: #22a56e;">2024-08-30</strong></td>
+                            <td style="vertical-align: middle;">32</td>
+                            <td style="vertical-align: middle;">34B</td>
+                            <td style="vertical-align: middle;">2024-11-25</td>
 
-                            <td style="vertical-align: middle;"><b class="">30.8</b></td>
-                            <td style="vertical-align: middle;">33.0</td>
-                            <td style="vertical-align: middle;">27.4</td>
-                            <td style="vertical-align: middle;">34.5</td>
-                            <td style="vertical-align: middle;">25.0</td>
-                            <td style="vertical-align: middle;">27.5</td>
-                            <td style="vertical-align: middle;">24.1</td>
+
+                            <td style="vertical-align: middle;"><b class="">48</b></td>
+                            <td style="vertical-align: middle;"><b class="">40</b></td>
+                            <td style="vertical-align: middle;">53</td>
+                            <td style="vertical-align: middle;">45</td>
+                            <td style="vertical-align: middle;">36</td>
+                            <td style="vertical-align: middle;">66</td>
+                            <td style="vertical-align: middle;">39</td>
+                            <td style="vertical-align: middle;">23</td>
                         </tr>
+
+
+
 
                         <tr>
                             <td style="vertical-align: middle;"></td>
@@ -387,143 +425,22 @@
                             </a></b></td>
                             <td style="vertical-align: middle;">24</td>
                             <td style="vertical-align: middle;">8B</td>
-                            <td style="vertical-align: middle;"><strong style="color: #22a56e;">2024-08-30</strong></td>
+                            <td style="vertical-align: middle;">2024-11-25</td>
 
-                            <td style="vertical-align: middle;"><b class="">28.1</b></td>
-                            <td style="vertical-align: middle;">28.3</td>
-                            <td style="vertical-align: middle;">27.1</td>
-                            <td style="vertical-align: middle;">31.0</td>
-                            <td style="vertical-align: middle;">25.5</td>
-                            <td style="vertical-align: middle;">25.5</td>
-                            <td style="vertical-align: middle;">38.9</td>
+                            <td style="vertical-align: middle;"><b class="">41</b></td>
+                            <td style="vertical-align: middle;"><b class="">44</b></td>
+                            <td style="vertical-align: middle;">43</td>
+                            <td style="vertical-align: middle;">39</td>
+                            <td style="vertical-align: middle;">38</td>
+                            <td style="vertical-align: middle;">64</td>
+                            <td style="vertical-align: middle;">37</td>
+                            <td style="vertical-align: middle;">33</td>
                         </tr>
 
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://openai.com/index/hello-gpt-4o/" class="ext-link"
-                                    style="font-size: 16px;">GPT-4o
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">OpenAI</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">10</td>
-                            <td style="vertical-align: middle;">-</td>
-                            <td style="vertical-align: middle;">2024-06-11</td>
 
 
-                            <td style="vertical-align: middle;"><b class="">27</b></td>
-                            <td style="vertical-align: middle;">26.5</td>
-                            <td style="vertical-align: middle;">23.7</td>
-                            <td style="vertical-align: middle;">28.3</td>
-                            <td style="vertical-align: middle;">21.4</td>
-                            <td style="vertical-align: middle;">28</td>
-                            <td style="vertical-align: middle;">32.8</td>
-                        </tr>
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a
-                                    href="https://github.com/magic-research/PLLaVA" class="ext-link"
-                                    style="font-size: 16px;">PLLaVA 34B
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Bytedance & NTU</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">16</td>
-                            <td style="vertical-align: middle;">34B</td>
-                            <td style="vertical-align: middle;">2024-06-11</td>
 
 
-                            <td style="vertical-align: middle;"><b class="">26.1</b></td>
-                            <td style="vertical-align: middle;">25.0</td>
-                            <td style="vertical-align: middle;">24.9</td>
-                            <td style="vertical-align: middle;">26.2</td>
-                            <td style="vertical-align: middle;">21.4</td>
-                            <td style="vertical-align: middle;">30.0</td>
-                            <td style="vertical-align: middle;">25.9</td>
-                        </tr>
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a href="https://arxiv.org/abs/2402.08268"
-                                                                               class="ext-link"
-                                                                               style="font-size: 16px;">LWM
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">UC Berkeley</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">>3600</td>
-                            <td style="vertical-align: middle;">7B</td>
-                            <td style="vertical-align: middle;">2024-06-11</td>
-
-
-                            <td style="vertical-align: middle;"><b class="">25.5</b></td>
-                            <td style="vertical-align: middle;">24.7</td>
-                            <td style="vertical-align: middle;">24.8</td>
-                            <td style="vertical-align: middle;">26.5</td>
-                            <td style="vertical-align: middle;">28.6</td>
-                            <td style="vertical-align: middle;">30.5</td>
-                            <td style="vertical-align: middle;">22.4</td>
-                        </tr>
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a href="https://arxiv.org/abs/2311.17043"
-                                                                               class="ext-link"
-                                                                               style="font-size: 16px;">LLaMA-VID
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">CUHK & SmartMore</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">>10800</td>
-                            <td style="vertical-align: middle;">13B</td>
-                            <td style="vertical-align: middle;">2024-06-11</td>
-
-
-                            <td style="vertical-align: middle;"><b class="">23.9</b></td>
-                            <td style="vertical-align: middle;">25.4</td>
-                            <td style="vertical-align: middle;">21.7</td>
-                            <td style="vertical-align: middle;">23.4</td>
-                            <td style="vertical-align: middle;">26.4</td>
-                            <td style="vertical-align: middle;">26.5</td>
-                            <td style="vertical-align: middle;">17.2</td>
-                        </tr>
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a href="https://arxiv.org/abs/2307.16449v4"
-                                                                               class="ext-link"
-                                                                               style="font-size: 16px;">MovieChat
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Zhejiang University</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">>10000</td>
-                            <td style="vertical-align: middle;">7B</td>
-                            <td style="vertical-align: middle;">2024-06-11</td>
-
-
-                            <td style="vertical-align: middle;"><b class="">22.5</b></td>
-                            <td style="vertical-align: middle;">21.3</td>
-                            <td style="vertical-align: middle;">23.1</td>
-                            <td style="vertical-align: middle;">25.9</td>
-                            <td style="vertical-align: middle;">22.3</td>
-                            <td style="vertical-align: middle;">24.0</td>
-                            <td style="vertical-align: middle;">17.2</td>
-                        </tr>
-
-                        <tr>
-                            <td style="vertical-align: middle;"></td>
-                            <td style="vertical-align: middle;"><b class=""><a href="https://arxiv.org/abs/2312.02051"
-                                                                               class="ext-link"
-                                                                               style="font-size: 16px;">TimeChat
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Peking University &
-                                    Huawei</p>
-                            </a></b></td>
-                            <td style="vertical-align: middle;">>96</td>
-                            <td style="vertical-align: middle;">7B</td>
-                            <td style="vertical-align: middle;">2024-06-11</td>
-
-
-                            <td style="vertical-align: middle;"><b class="">22.3</b></td>
-                            <td style="vertical-align: middle;">21.9</td>
-                            <td style="vertical-align: middle;">21.7</td>
-                            <td style="vertical-align: middle;">25.9</td>
-                            <td style="vertical-align: middle;">22.7</td>
-                            <td style="vertical-align: middle;">25.0</td>
-                            <td style="vertical-align: middle;">24.1</td>
-                        </tr>
 
 
                         </tbody>
@@ -535,7 +452,7 @@
                     </p>
 
                     <p style=" text-align: left;">
-                        * All the frames are resized to 512x512 resolution to fit within GPT-4o’s max context length.
+
                     </p>
 
 
@@ -699,7 +616,7 @@
 <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
     <pre><code>@misc{wang2024lvbench,
-      title={MotionBench: An Extreme Long Video Understanding Benchmark},
+      title={MotionBench: Benchmarking and Improving Fine-grained Video Motion Understanding for Vision Language Models},
       author={Weihan Wang and Zehai He and Wenyi Hong and Yean Cheng and Xiaohan Zhang and Ji Qi and Shiyu Huang and Bin Xu and Yuxiao Dong and Ming Ding and Jie Tang},
       year={2024},
       eprint={2406.08035},
