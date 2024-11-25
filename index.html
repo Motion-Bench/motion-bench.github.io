@@ -85,7 +85,8 @@
 
                     <div class="is-size-5 publication-authors" , style="width: 80%; margin: 20px auto;" ,>
 
-                        <span class="author-block" , style="font-size:24px"><a href="https://github.com/THUDM/MotionBench">MotionBench Team</a></span>
+                        <span class="author-block" , style="font-size:24px"><a
+                                href="https://github.com/THUDM/MotionBench">MotionBench Team</a></span>
 
                     </div>
 
@@ -161,22 +162,18 @@
             <div class="column is-four-fifths">
                 <h2 class="title is-3">Introduction</h2>
                 <div class="content has-text-justified">
-                    Recent progress in multimodal large language models has markedly enhanced the understanding of short
-                    videos (typically under one minute), and several evaluation datasets have emerged accordingly.
-                    However, these advancements fall short of meeting the demands of real-world applications such as
-                    embodied intelligence for long-term decision-making, in-depth movie reviews and discussions, and
-                    live sports commentary, all of which require comprehension of long videos spanning several hours. To
-                    address this gap, we introduce MotionBench, a benchmark specifically designed for long video
-                    understanding. Our dataset comprises publicly sourced videos, including TV series, sports
-                    broadcasts, and everyday surveillance footage, and encompasses a diverse set of tasks aimed at long
-                    video comprehension and information extraction. By leveraging a combination of manual annotations
-                    and model-assisted techniques, we have created a robust video understanding question-answer dataset.
-                    MotionBench is designed to challenge multimodal models to demonstrate long-term memory and extended
-                    comprehension capabilities. Our extensive evaluations of various baseline models reveal that current
-                    multimodal large language models still underperform on these demanding long video understanding
-                    tasks. Through MotionBench, we aim to spur the development of more advanced models capable of tackling
-                    the
-                    complexities of long video comprehension.
+                    In recent years, vision language models (VLMs) have made significant advancements in video
+                    understanding. However, a crucial capability — fine-grained motion comprehension — remains
+                    under-explored in current benchmarks. To address this gap, we propose MotionBench, a comprehensive
+                    evaluation benchmark designed to assess the fine-grained motion comprehension of video understanding
+                    models. MotionBench evaluates models' motion-level perception through six primary categories of
+                    motion-oriented question types and includes data collected from diverse sources, ensuring a broad
+                    representation of real-world video content. Experimental results reveal that existing VLMs perform poorly in understanding fine-grained motions.
+                    To enhance VLM's ability to perceive fine-grained motion within a limited sequence length of LLM, we
+                    conduct extensive experiments reviewing VLM architectures optimized for video feature compression
+                    and propose a novel and efficient Through-Encoder (TE) Fusion method. Experiments show that higher frame rate inputs and TE Fusion yield improvements in motion
+                    understanding, yet there is still substantial room for enhancement. Our benchmark aims to guide and motivate the development of more capable video understanding models,
+                    emphasizing the importance of fine-grained motion comprehension.
                 </div>
             </div>
         </div>
@@ -344,7 +341,8 @@
                                     href="https://github.com/Oryx-mllm/Oryx"
                                     class="ext-link"
                                     style="font-size: 16px;">Oryx-34B
-                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Tsinghua University & Tencent & NTU</p>
+                                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Tsinghua University &
+                                    Tencent & NTU</p>
                             </a></b></td>
                             <td style="vertical-align: middle;">64</td>
                             <td style="vertical-align: middle;">34B</td>
@@ -532,7 +530,8 @@
                     </table>
 
                     <p style="margin-top: -20px;">
-                        <strong style="color: #22a56e; font-size: 18px;">Green date</strong> indicates the newly added/updated models.
+                        <strong style="color: #22a56e; font-size: 18px;">Green date</strong> indicates the newly
+                        added/updated models.
                     </p>
 
                     <p style=" text-align: left;">
