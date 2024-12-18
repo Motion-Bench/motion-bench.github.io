@@ -76,7 +76,8 @@
             <div class="columns is-centered">
                 <div class="column has-text-centered">
                     <h1 class="title is-1 publication-title is-bold">
-                        <img src="static/images/lvbench.jpg" style="width:1.6em;vertical-align: middle" alt="Logo"/>
+                        <img src="static/images/motion-bench.png" style="width:1.6em;vertical-align: middle"
+                             alt="Logo"/>
                         <span class="video-mme" style="vertical-align: middle">MotionBench</span>
                     </h1>
                     <h2 class="subtitle is-3 publication-subtitle" , style="margin-bottom: 20px;">
@@ -168,11 +169,14 @@
                     evaluation benchmark designed to assess the fine-grained motion comprehension of video understanding
                     models. MotionBench evaluates models' motion-level perception through six primary categories of
                     motion-oriented question types and includes data collected from diverse sources, ensuring a broad
-                    representation of real-world video content. Experimental results reveal that existing VLMs perform poorly in understanding fine-grained motions.
+                    representation of real-world video content. Experimental results reveal that existing VLMs perform
+                    poorly in understanding fine-grained motions.
                     To enhance VLM's ability to perceive fine-grained motion within a limited sequence length of LLM, we
                     conduct extensive experiments reviewing VLM architectures optimized for video feature compression
-                    and propose a novel and efficient Through-Encoder (TE) Fusion method. Experiments show that higher frame rate inputs and TE Fusion yield improvements in motion
-                    understanding, yet there is still substantial room for enhancement. Our benchmark aims to guide and motivate the development of more capable video understanding models,
+                    and propose a novel and efficient Through-Encoder (TE) Fusion method. Experiments show that higher
+                    frame rate inputs and TE Fusion yield improvements in motion
+                    understanding, yet there is still substantial room for enhancement. Our benchmark aims to guide and
+                    motivate the development of more capable video understanding models,
                     emphasizing the importance of fine-grained motion comprehension.
                 </div>
             </div>
@@ -322,7 +326,6 @@
                         </tr>
 
 
-
                         <tr>
                             <td style="vertical-align: middle;"></td>
                             <td style="vertical-align: middle;"><b class=""><a
@@ -414,8 +417,6 @@
                         </tr>
 
 
-
-
                         <tr>
                             <td style="vertical-align: middle;"></td>
                             <td style="vertical-align: middle;"><b class=""><a
@@ -436,11 +437,6 @@
                             <td style="vertical-align: middle;">37</td>
                             <td style="vertical-align: middle;">33</td>
                         </tr>
-
-
-
-
-
 
 
                         </tbody>
@@ -472,7 +468,31 @@
     </div>
 </section>
 
-<!--Example-->
+<section class="section">
+    <div class="container">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths" style="width: 100%;">
+
+                <h2 class="title is-3">State-of-the-art video understanding models struggle with basic motion-level perception.</h2>
+                <div class="content has-text-justified">
+                    <div>
+                        <div class="content has-text-centered">
+                            <img src="static/images/motion-bench-cover.png" style="width: 50%;"/>
+                            <p style="margin-bottom: 30px;">Compared to existing benchmarks, our proposed MotionBench focuses on assessing the model’s Motion level perception capability, which is critical in understanding videos with fast and instant interactions and motions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    </div>
+</section>
+
 <section class="section">
     <div class="container">
         <div class="columns is-centered has-text-centered">
@@ -480,20 +500,40 @@
 
                 <h2 class="title is-3">Example</h2>
                 <div class="content has-text-justified">
-
                     <div>
                         <div class="content has-text-centered">
-                            <img src="static/images/example.jpg" style="width: 100%;"/>
-                            <p style="margin-bottom: 30px;">🔗 Full Video Link:&nbsp;&nbsp;<a
-                                    href="https://www.youtube.com/watch?v=rSE2YPcv89U">https://www.youtube.com/watch?v=rSE2YPcv89U</a>
+                            <img src="static/images/example.png" style="width: 100%;"/>
+                            <p style="margin-bottom: 30px;">MotionBench, a collection of manually curated multi-choice queries with video clips featuring dynamic changes from various scenes such as daily life and medical instructions. We devise six primary tasks to evaluate the capability of motion-level perception. Unlike previous story-level and event-level benchmarks, MotionBench is characterized by a significantly higher annotation density, allowing for the assessment of fine-grained motions.
                             </p>
-
                         </div>
-
-
                     </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
 
 
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths" style="width: 100%;">
+
+                <h2 class="title is-3">The comparison of existing video VLM benchmarks with MotionBench.</h2>
+                <div class="content has-text-justified">
+                    <div>
+                        <div class="content has-text-centered">
+                            <img src="static/images/compare_bench.png" style="width: 100%;"/>
+                            <p style="margin-bottom: 30px;">MotionBench collects various video sources including
+                                web videos and synthetic videos, and provides a new evaluation perspective in motion
+                                level perception.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -510,44 +550,63 @@
     <div class="columns is-centered">
         <div class="column">
             <div class="content has-text-centered">
-                <h2 class="title is-3" style="margin-top: 30px;">Statistics</h2>
+                <h2 class="title is-3" style="margin-top: 30px;">Basic Statistics of MotionBench</h2>
 
 
                 <div class="container-wrapper" style="display: flex; justify-content: center; align-items: center;">
                     <div id="container"></div>
                     <div id="image-container" style="margin-right: 20px;">
-                        <img src="static/images/cover.png" alt="data-composition"
-                             style="max-width: 70%; display: inline-block;"/>
+                        <img src="static/images/statistics.png" alt="data-composition"
+                             style="max-width: 90%; display: inline-block;"/>
                     </div>
 
                 </div>
 
-                <p style="text-align: center; margin-left: auto; margin-right: auto; width: 50%;">
-                    (Left) <strong>Video categories.</strong> Our dataset contains 6 major categories and 21
-                    subcategories. <br> (Right) Performance radar chart of different models on MotionBench.<br/>
-                </p>
+
 
             </div>
         </div>
     </div>
 </section>
 
-<!--Compare-->
-<section>
-    <div class="columns is-centered">
-        <div class="column">
-            <div class="content has-text-centered">
-                <h2 class="title is-3">Benchmark Comparison</h2>
-                <img src="static/images/compare.png" alt="data-composition" style="max-width: 50%;"/>
-                <p style="text-align: center; margin-left: auto; margin-right: auto; width: 50%;">
-                    <strong>Comparison of different datasets.</strong> <strong>Open-domain</strong> represents whether
-                    the source of the video is
-                    diversified. <strong>Multi-type</strong> represents whether the types of questions are greater than
-                    2
-                    categories.
-                </p>
+
+
+<section class="hero is-light is-small">
+    <div class="hero-body has-text-centered">
+        <h1 class="title is-1 mathvista_other">
+            <span class="mathvista_other" style="vertical-align: middle">Through-Encoder Fusion</span>
+        </h1>
+        <p>We propose Through-Encoder(TE) Fusion, a novel compression architecture to enhance motion-level understanding under constrained LLM context length.
+            Experimental results demonstrate that TE Fusion achieves state-of-the-art results on MotionBench and outperforms other compression methods across MotionBench,
+            MVBench, LVBench, and VideoMME in the ablation study, and shows a particular advantage in high compression ratio scenarios. </p>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths" style="width: 100%;">
+
+                <h2 class="title is-3">Model Architecture of Video Understanding Models</h2>
+                <div class="content has-text-justified">
+                    <div>
+                        <div class="content has-text-centered">
+                            <img src="static/images/model.png" style="width: 100%;"/>
+                            <p style="margin-bottom: 30px;">MotionBench collects various video sources including
+                                web videos and synthetic videos, and provides a new evaluation perspective in motion
+                                level perception.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
+    </div>
+    </div>
+
+
     </div>
 </section>
 
@@ -558,54 +617,92 @@
     </div>
 </section>
 
+
+
 <section class="section">
     <div class="container">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths" style="width: 100%;">
 
-        <div class="columns is-centered m-6">
-            <div class="column is-full has-text-centered content">
-                <h2 class="title is-3">Answer Distribution</h2>
-                <div class="box m-5">
-                    <div class="content has-text-centered">
-                        <img src="static/images/distribution.png" alt="grade-lv" width="100%"/>
-                        <p>Distribution of answers generated by different models.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="columns is-centered m-6">
-            <div class="column is-full has-text-centered content">
-                <h2 class="title is-3">Model vs Human</h2>
-
-                <div class="box m-5">
-                    <div class="content has-text-centered">
-                        <img src="static/images/human.png" alt="" width="80%"/>
-                        <p>MotionBench evaluation results across different video categories.</p>
-                    </div>
-                </div>
-
-                <div class="box m-5">
-
-                    <div id="results-carousel" class="carousel results-carousel">
-
+                <h2 class="title is-3">Evaluation results of the existing video VLMs.</h2>
+                <div class="content has-text-justified">
+                    <div>
                         <div class="content has-text-centered">
-                            <img src="static/images/video.png" alt="" width="70%"/>
-                            <p style="margin-bottom: 30px;">The impact of different video durations.</p>
-                        </div>
-
-                        <div class="content has-text-centered">
-                            <img src="static/images/clue.png" alt="" width="70%"/>
-                            <p style="margin-bottom: 30px;">The impact of different clue durations.</p>
+                            <img src="static/images/all_results.png" style="width: 100%;"/>
+                            <p style="margin-bottom: 30px;">Abbreviations: MR (Motion Recognition), LM (Location-related Motion), CM
+(Camera Motion), MO (Motion-related Objects), AO (Action Order), RC (Repetition Count). We randomly split MotionBench into “dev”
+and “test”. We will release the ground truth answers in the “dev” set and set up an online platform for results submission in the “test” set.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
+    </div>
+    </div>
+
 
     </div>
 </section>
 
+
+
+<section class="section">
+    <div class="container">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths" style="width: 100%;">
+
+                <h2 class="title is-3">Evaluation results on Different Benchmarks.</h2>
+                <div class="content has-text-justified">
+                    <div>
+                        <div class="content has-text-centered">
+                            <img src="static/images/results_on_bens.png" style="width: 100%;"/>
+                            <p style="margin-bottom: 30px;">Model performance variation with respect to different compression ratios k = 2, 4, 8, 16, given a fixed VLM input frame count
+of N_{input} = 16. The pink dotted line represents the performance of the baseline model, which processes 16 frames without temporal
+compression. Note that each compression method is re-implemented on the GLM-4V-9B backbone to ensure a fair comparison.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    </div>
 </section>
+
+
+
+
+<section class="section">
+    <div class="container">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths" style="width: 100%;">
+
+                <h2 class="title is-3">Evaluation results on Different Benchmarks.</h2>
+                <div class="content has-text-justified">
+                    <div>
+                        <div class="content has-text-centered">
+                            <img src="static/images/table_results.png" style="width: 50%;"/>
+                            <p style="margin-bottom: 30px;">Benchmark results for different compression methods at various compression rates, all using the same sequence length in the VLM decoder.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    </div>
+</section>
+
 <section class="hero is-light is-small">
     <div class="hero-body has-text-centered">
         <h1 class="title is-1 mathvista_other" id="citation">Citation</h1>
@@ -615,11 +712,11 @@
 
 <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
-    <pre><code>@misc{wang2024lvbench,
+    <pre><code>@misc{xxx,
       title={MotionBench: Benchmarking and Improving Fine-grained Video Motion Understanding for Vision Language Models},
-      author={Weihan Wang and Zehai He and Wenyi Hong and Yean Cheng and Xiaohan Zhang and Ji Qi and Shiyu Huang and Bin Xu and Yuxiao Dong and Ming Ding and Jie Tang},
+      author={xxx},
       year={2024},
-      eprint={2406.08035},
+      eprint={2406.xxx},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
